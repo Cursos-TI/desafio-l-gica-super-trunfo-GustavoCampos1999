@@ -102,6 +102,7 @@ int main() {
     scanf("%d", &opcao);
     switch (opcao) {
             case 1:
+        printf("==========================\n");
         printf("%s vs %s\n", estado1, estado2);
         printf("Será comparado a população\n");
         printf("%s: %lu habitantes\n", estado1, populacao1);
@@ -113,6 +114,7 @@ int main() {
         break;
 
             case 2:
+        printf("==========================\n");
         printf("%s vs %s\n", estado1, estado2);
         printf("Será comparado a área\n");
         printf("%s: %.2f km²\n", estado1, area1);
@@ -124,6 +126,7 @@ int main() {
         break;
 
             case 3:
+        printf("==========================\n");
         printf("%s vs %s\n", estado1, estado2);
         printf("Será comparado o PIB\n");
         printf("%s: %.2f bilhões de reais\n", estado1, pib1);
@@ -135,6 +138,7 @@ int main() {
         break;
 
             case 4:
+        printf("==========================\n");
         printf("%s vs %s\n", estado1, estado2);
         printf("Será comparado os pontos turísticos\n");
         printf("%s: %d Pontos Turísticos\n", estado1, pontost1);
@@ -146,6 +150,7 @@ int main() {
         break;
 
             case 5:
+        printf("==========================\n");
         printf("%s vs %s\n", estado1, estado2);
         printf("Será comparado a densidade populacional\n");
         printf("%s: %.2f hab/km²\n", estado1, densidade1);
@@ -157,6 +162,7 @@ int main() {
         break;
 
             case 6:
+        printf("==========================\n");
         printf("%s vs %s\n", estado1, estado2);
         printf("Será comparado o PIB per capita\n");
         printf("%s: %.2f reais\n", estado1, perCapita1);
@@ -168,6 +174,7 @@ int main() {
         break;
 
             case 7  :
+        printf("==========================\n");
         printf("%s vs %s\n", estado1, estado2);
         printf("Será comparado o super poder\n");
         printf("%s: %.2f pontos de poder\n", estado1, poder1);
@@ -177,6 +184,8 @@ int main() {
         else if (poder2 > poder1) {printf ("%s venceu!\n", estado2);}
         else {printf ("Empatou!\n");}
         break;
+        default:
+      printf("Opção inválida. Tente novamente.\n");
     }
     return 0;
 }
